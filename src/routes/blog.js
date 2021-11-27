@@ -4,7 +4,7 @@ const router = express.Router();
 const Blog = require('../model/Blog');
 const advancedResults = require('../middleware/advancedRequest');
 const { protect, authorize } = require('../middleware/auth');
-const { createBlog, getBlogs, getBlog, updateBlog, deleteBlog } = require('../controller/Blog');
+const { createBlog, getBlogs, getBlog, updateBlog, deleteBlog } = require('../controller/blog');
 
 // authorize('admin'), 
 router.route("/")
