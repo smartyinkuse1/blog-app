@@ -45,7 +45,7 @@ const createBlog = asyncHandler(async(req,res,next)=> {
     let newFile = await cloudinary.uploader.upload(backgroundImage.tempFilePath)
     let subFile = await cloudinary.uploader.upload(subImage.tempFilePath)
     console.log(newFile, backgroundImage, "Image")
-    const blog = await blog.create({
+    const blog = await Blog.create({
         ...req.body,
         backgroundImage: newFile.url,
         subImage: subFile.url

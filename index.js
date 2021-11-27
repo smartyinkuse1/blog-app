@@ -34,7 +34,7 @@ app.use(
     preserveExtension: true,
   })
 );
-app.use("/api/v1/auth", blog);
+app.use("/api/v1/blog", blog);
 
 
 // app.use(express.static(path.join(__dirname, 'public')))
